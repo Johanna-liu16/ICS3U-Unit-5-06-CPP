@@ -10,7 +10,7 @@
 
 float decimalConverter(float &decimal, int &decimalPlaces) {
     // Converts a string to hex values
-    decimal =  0.5decimal * pow(10.0, decimalPlaces) +;
+    decimal = decimal * pow(10.0, decimalPlaces) + 0.5;
     decimal = trunc(decimal);
     decimal = decimal / pow(10.0, decimalPlaces);
 }
@@ -24,7 +24,7 @@ int main() {
     int decimalPlaces;
 
     std::cout << "This program rounds a number." << std::endl;
-    std::cout << "Enter a number you want to round: ";
+    std::cout << "Enter a number you want to be round is: ";
     std::cin >> strDecimal;
     std::cout << "Enter the number of decimal places you want rounded: ";
     std::cin >> strDecimalPlaces;
